@@ -17,7 +17,7 @@ export default function Emoji() {
       <div className="grid gap-8 md:grid-cols-3">
         {/* Card 1 */}
         <div className="bg-white p-6 rounded-2xl shadow-[#febf11c0] shadow-md text-center flex flex-col items-center">
-          <Image src="emoji/emoji1.webp" alt="Missing Opportunities" className="w-16 h-16 mb-4" />
+          <Image src="/emoji/emoji1.webp" alt="Missing Opportunities" width={20} height={20} className="w-16 h-16 mb-4" />
           <h3 className="text-xl font-semibold mb-2">Missing Out On Opportunities</h3>
           <p className="text-black text-sm">
             📄 No website? You re invisible to potential clients. People Google you, but find nothing. You are losing trust.
@@ -26,16 +26,16 @@ export default function Emoji() {
 
         {/* Card 2 */}
         <div className="bg-white p-6 rounded-2xl shadow-[#febf11c0] shadow-md text-center flex flex-col items-center">
-          <Image src="emoji/emoji2.webp" alt="Website Issues" className="w-16 h-16 mb-4" />
-          <h3 className="text-xl font-semibold mb-2">Website Isn’t Doing Its Job</h3>
+          <Image src="/emoji/emoji2.webp" alt="Website Issues" width={20} height={20} className="w-16 h-16 mb-4" />
+          <h3 className="text-xl font-semibold mb-2">Website Not Doing Its Job</h3>
           <p className="text-black text-sm">
-            Got a site, but it’s not converting? Maybe it’s too basic, slow, or not clear. Visitors bounce, and leads never come.
+            Got a site, but it’s not converting? Maybe its too basic, slow, or not clear. Visitors bounce, and leads never come.
           </p>
         </div>
 
         {/* Card 3 */}
         <div className="bg-white p-6 rounded-2xl shadow-[#febf11c0] shadow-md text-center flex flex-col items-center">
-          <Image src="emoji/emoji1.webp" alt="Left Behind" className="w-16 h-16 mb-4" />
+          <Image src="/emoji/emoji1.webp" alt="Left Behind" width={20} height={20} className="w-16 h-16 mb-4" />
           <h3 className="text-xl font-semibold mb-2">You are Getting Left Behind</h3>
           <p className="text-black text-sm">
             Your competitors are online with better design, faster sites, and clearer messages. You’re falling behind while they grow.
