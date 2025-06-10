@@ -7,8 +7,8 @@ export default function Hero() {
 
     
   return (
-    <section className="flex flex-col items-center pb-24 text-center px-4 sm:px-6 pt-[84px] md:pt-[76px] py-16 bg-gradient-to-r from-white via-white to-[#febf11c0]">
-      <h1 className="text-[32px] md:text-[50px]  font-bold text-black  md:leading-[74px] max-w-3xl">
+    <section className="flex flex-col items-center pb-24 text-center px-4 sm:px-6 pt-[84px] md:pt-[76px] py-16  bg-gradient-to-b md:bg-gradient-to-r from-white md:via-white to-[#febf11c0]">
+      <h1 className="text-[30px] md:text-[50px]  font-bold text-black  md:leading-[74px] max-w-3xl">
         CREATING POWERFUL CUSTOM <br className="hidden md:flex"/>
       <span className="md:text-[49px]">  WEBSITES FOR </span> <span className="text-[#F6C745] px-1 rounded-2xl">COACHES</span> & <br className="hidden md:flex"/>
 
