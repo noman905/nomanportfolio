@@ -3,7 +3,7 @@ import { InlineWidget } from "react-calendly";
 
 export default function Calendly  ()  {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center  p-6 rounded-4xl bg-gradient-to-r from-white to-[#febf11c0]">
+    <div className=" flex flex-col items-center justify-center  p-6 rounded-4xl bg-gradient-to-r from-white to-[#febf11c0]">
       <h1 className="text-3xl text-center font-bold text-black mb-3">
       Let’s Unlock Growth Together
       </h1>
