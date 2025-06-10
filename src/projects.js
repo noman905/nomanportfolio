@@ -36,7 +36,7 @@ export default function ProjectsSection() {
           <span className="text-[#febf11c0]">RESULTS</span>
         </h2>
         <p className="text-black max-w-2xl mx-auto text-base md:text-lg mb-12">
-          From small ideas to fully working websites here's a quick look at what I can build for your business.
+          From small ideas to fully working websites here a quick look at what I can build for your business.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

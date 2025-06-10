@@ -48,7 +48,7 @@ export default function FAQSection() {
             Frequently Asked <span className="text-yellow-400">Questions</span>
           </h2>
           <p className="text-base sm:text-lg text-black font-medium">
-            Here's everything you might want to know before we team up and build your next-level site.
+            Here everything you might want to know before we team up and build your next-level site.
           </p>
         </div>
 
