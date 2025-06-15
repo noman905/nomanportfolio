@@ -13,7 +13,7 @@ export default function Hero() {
       <span className="md:text-[49px]">  WEBSITES FOR </span> <span className="text-[#F6C745] px-1 rounded-2xl">COACHES</span> & <br className="hidden md:flex"/>
 
 
-        <span className="text-[#F6C745] px-1 py-0 m-0 p-0 rounded-2xl">PERSONAL BRANDS</span>
+        <span className="text-[#F6C745] px-1 py-0 m-0 p-0 rounded-2xl">Consultants</span>
       </h1>
 
       <p className="mt-6 text-white font-semibold bg-black  py-2 px-6 rounded-full">
