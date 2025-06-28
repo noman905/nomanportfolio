@@ -9,11 +9,11 @@ export default function Hero() {
   return (
     <section className="flex flex-col items-center pb-24 text-center px-4 sm:px-6 pt-[84px] md:pt-[76px] py-16  bg-gradient-to-b md:bg-gradient-to-r from-white md:via-white to-[#febf11c0]">
       <h1 className="text-[30px] md:text-[50px]  font-bold text-black  md:leading-[74px] max-w-3xl">
-        CREATING POWERFUL CUSTOM <br className="hidden md:flex"/>
-      <span className="md:text-[49px]">  WEBSITES FOR </span> <span className="text-[#F6C745] px-1 rounded-2xl">COACHES</span> & <br className="hidden md:flex"/>
+        Websites That Elevate <br className="hidden md:flex"/>
+      <span className="md:text-[49px]">  Coaches & Consultants</span> <span className="text-[#F6C745] px-1 rounded-2xl"></span> & <br className="hidden md:flex"/>
 
 
-        <span className="text-[#F6C745] px-1 py-0 m-0 p-0 rounded-2xl">Consultants</span>
+            <span className="text-[#F6C745]">with Strategy</span> & <span className="text-[#F6C745]">Style</span>
       </h1>
 
       <p className="mt-6 text-white font-semibold bg-black  py-2 px-6 rounded-full">
@@ -34,4 +34,5 @@ export default function Hero() {
 
     </section>
   );
+
 }

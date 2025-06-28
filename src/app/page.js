@@ -1,13 +1,15 @@
 import AboutMe from "@/aboutme";
 import WhyChooseUs from "@/chooseus";
-import Emoji from "@/emoji";
+
 import FAQSection from "@/faqs";
 
 import Hero from "@/hero";
 import DiscoveryCallSection from "@/last";
+import Problem from "@/problem";
 
 import ProcessSection from "@/process";
 import ProjectsSection from "@/projects";
+import Solution from "@/solution";
 
 
 export default function Home() {
@@ -16,7 +18,8 @@ export default function Home() {
 <>
 
 <Hero />
-<Emoji />
+<Problem />
+<Solution />
 <ProcessSection />
 <AboutMe />
 <ProjectsSection />

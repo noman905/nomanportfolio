@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between sticky top-0  items-center px-2 md:px-6 py-4 bg-gradient-to-r from-white via-white to-[#febf11dd]">
+    <nav className="flex justify-between sticky top-0 z-10  items-center px-2 md:px-6 py-4 bg-gradient-to-r from-white via-white to-[#febf11dd]">
       <div className="text-xl font-bold text-[#febf11dd]">NOMAN AFZAL</div>
 
       {/* Navigation links - hidden on small screens, flex on md and above */}

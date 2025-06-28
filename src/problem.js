@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
+import { FiBriefcase, FiGlobe, FiTrendingDown } from "react-icons/fi";
 
-export default function Emoji() {
+export default function Problem() {
   return (
     <section className="px-4 py-12 md:py-20 max-w-7xl mx-auto">
       <div className="text-center mb-12">
@@ -17,7 +17,7 @@ export default function Emoji() {
       <div className="grid gap-8 md:grid-cols-3">
         {/* Card 1 */}
         <div className="bg-white p-6 rounded-2xl shadow-[#febf11c0] shadow-md text-center flex flex-col items-center">
-          <Image src="/emoji/emoji1.webp" alt="Missing Opportunities" width={20} height={20} className="w-16 h-16 mb-4" />
+          <FiBriefcase size={64} color="#febf11c0" className="mb-4" />
           <h3 className="text-xl font-semibold mb-2">Missing Out On Opportunities</h3>
           <p className="text-black text-sm">
             📄 No website? You re invisible to potential clients. People Google you, but find nothing. You are losing trust.
@@ -26,7 +26,7 @@ export default function Emoji() {
 
         {/* Card 2 */}
         <div className="bg-white p-6 rounded-2xl shadow-[#febf11c0] shadow-md text-center flex flex-col items-center">
-          <Image src="/emoji/emoji2.webp" alt="Website Issues" width={20} height={20} className="w-16 h-16 mb-4" />
+          <FiGlobe size={64} color="#febf11c0" className="mb-4" />
           <h3 className="text-xl font-semibold mb-2">Website Not Doing Its Job</h3>
           <p className="text-black text-sm">
             Got a site, but it’s not converting? Maybe its too basic, slow, or not clear. Visitors bounce, and leads never come.
@@ -35,7 +35,7 @@ export default function Emoji() {
 
         {/* Card 3 */}
         <div className="bg-white p-6 rounded-2xl shadow-[#febf11c0] shadow-md text-center flex flex-col items-center">
-          <Image src="/emoji/emoji1.webp" alt="Left Behind" width={20} height={20} className="w-16 h-16 mb-4" />
+          <FiTrendingDown size={64} color="#febf11c0" className="mb-4" />
           <h3 className="text-xl font-semibold mb-2">You are Getting Left Behind</h3>
           <p className="text-black text-sm">
             Your competitors are online with better design, faster sites, and clearer messages. You’re falling behind while they grow.
@@ -44,9 +44,10 @@ export default function Emoji() {
       </div>
 
       <div className="mt-12 text-center">
-      <Link href="/bookcall">  <button className="bg-[#febf11c0] hover:bg-[#F6C745] text-black font-bold py-3 px-6 rounded-full text-lg transition">
-        Take Action-See Results
-        </button>
+        <Link href="/bookcall">
+          <button className="bg-[#febf11c0] hover:bg-[#F6C745] text-black font-bold py-3 px-6 rounded-full text-lg transition">
+            Take Action-See Results
+          </button>
         </Link>
       </div>
     </section>
