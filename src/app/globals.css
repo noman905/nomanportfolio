@@ -1,14 +1,17 @@
 @import "tailwindcss";
 
 
+ html,
 body {
-    font-family: var(--font-poppins), sans-serif;
-  }
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body,h1,h2 {
+  font-family: var(--font-poppins), sans-serif;
+}
   
-  
-  body,html{
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-  }
   

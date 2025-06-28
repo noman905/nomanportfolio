@@ -26,7 +26,7 @@ export default function SolutionSection() {
     <section className="bg-white py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
       {/* Heading */}
       <div className="text-center mb-20">
-        <h2 className="text-2xl md:text-4xl font-bold mb-4">
+        <h2 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] leading-tight font-extrabold text-black mb-4">
           Real Results. Real Solutions.
         </h2>
         <p className="text-black text-base md:text-lg max-w-2xl mx-auto">

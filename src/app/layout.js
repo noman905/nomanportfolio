@@ -1,8 +1,22 @@
+// app/layout.js or wherever your RootLayout is
 import { Geist, Geist_Mono } from "next/font/google";
 import { Poppins } from "next/font/google";
+import { Anton } from "next/font/google";
+
 import Footer from "@/footer";
 import Navbar from "@/Navbar";
 import "./globals.css";
+
+// Load fonts with CSS variable support
+const geistSans = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist-sans",
+});
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-geist-mono",
+});
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -11,16 +25,11 @@ const poppins = Poppins({
   display: "swap",
 });
 
-
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const anton = Anton({
+  weight: "400",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-anton",
+  display: "swap",
 });
 
 export const metadata = {
@@ -36,6 +45,7 @@ export default function RootLayout({ children }) {
           ${poppins.variable} 
           ${geistSans.variable} 
           ${geistMono.variable} 
+          ${anton.variable}
           antialiased
         `}
       >
