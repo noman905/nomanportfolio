@@ -3,11 +3,11 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="w-full flex items-center justify-center text-center px-2 sm:px-4 pt-20 md:pt-20 pb-20 bg-gradient-to-b md:bg-gradient-to-r from-white md:via-white to-[#febf11c0]">
+    <section className="w-full flex items-center justify-center text-center px-2 sm:px-4 pt-20 md:pt-20 pb-20  md:bg-gradient-to-r from-white md:via-white to-[#febf11c0]">
       <div className="w-full max-w-6xl flex flex-col items-center justify-center">
 
         {/* Main Heading */}
-        <h1 className="text-[34px] sm:text-[40px] md:text-[52px] lg:text-[60px] font-extrabold text-black leading-tight md:leading-[1.2] max-w-4xl">
+        <h1 className="text-[36px] sm:text-[40px] md:text-[52px] lg:text-[60px] font-extrabold text-black leading-tight md:leading-[1.2] max-w-4xl">
           Transforming <span className="text-[#F6C745]">Coaching Brands </span>
           with <span className="text-[#F6C745]"> Strategic</span> & <span className="text-[#F6C745]">Converting</span> Websites
         </h1>
