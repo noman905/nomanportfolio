@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="w-full flex items-center justify-center text-center px-2 sm:px-4 pt-20 md:pt-20 pb-20  md:bg-gradient-to-r from-white md:via-white to-[#febf11c0]">
+    <section className="w-full flex items-center justify-center text-center px-2 sm:px-4 pt-20 md:pt-20 pb-20  md:bg-gradient-to-r from-white md:via-white to-[#ffffffc0]">
       <div className="w-full max-w-6xl flex flex-col items-center justify-center">
 
         {/* Main Heading */}
@@ -20,13 +20,13 @@ export default function Hero() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-10 w-full max-w-sm sm:max-w-none justify-center px-2">
           <Link href="/bookcall">
-            <button className="w-full sm:w-auto bg-[#F6C745] hover:bg-[#f5b900] transition duration-300 text-black font-semibold py-3 px-6 rounded-full shadow-md text-sm sm:text-base">
+            <button className="w-[260px] sm:w-auto bg-[#F6C745] hover:bg-[#f5b900] transition duration-300 text-black font-semibold py-3 px-10 rounded-full shadow-md text-sm sm:text-base">
               BOOK 1:1 DISCOVERY CALL
             </button>
           </Link>
 
           <Link href="#work">
-            <button className="w-full sm:w-auto bg-black hover:bg-gray-900 transition duration-300 text-white font-semibold py-3 px-6 rounded-full shadow-md text-sm sm:text-base">
+            <button className="w-[250px] sm:w-auto bg-black hover:bg-gray-900 transition duration-300 text-white font-semibold py-3 px-10 rounded-full shadow-md text-sm sm:text-base">
               SEE MY WORK
             </button>
           </Link>
