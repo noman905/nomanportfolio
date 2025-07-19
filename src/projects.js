@@ -48,9 +48,9 @@ const projects = [
 
 export default function ShowcaseWork() {
   return (
-    <section className="bg-[#fdf8f3] py-24 px-4 sm:px-6">
+    <section className="bg-[#fdf8f3] py-20  px-4 sm:px-6">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-5xl font-extrabold text-[#ec7424] mb-4">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-[#ec7424] mb-4">
           Elevating Coaches into Iconic Brands
         </h2>
         <p className="text-lg text-black mb-12 md:px-20">

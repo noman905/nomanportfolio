@@ -13,5 +13,21 @@ body {
 body,h1,h2 {
   font-family: var(--font-poppins), sans-serif;
 }
-  
-  
+
+
+
+@keyframes bounce-liquid {
+  0% {
+    transform: translateY(50%);
+  }
+  50% {
+    transform: translateY(60%);
+  }
+  100% {
+    transform: translateY(50%);
+  }
+}
+
+.animate-bounce-liquid {
+  animation: bounce-liquid 3s ease-in-out infinite;
+}

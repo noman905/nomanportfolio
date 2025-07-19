@@ -43,7 +43,7 @@ export default function FAQSection() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         {/* Left Heading */}
         <div className="text-center md:text-left">
-          <h2 className="text-[28px] sm:text-3xl md:text-5xl font-bold mb-4 text-black leading-tight">
+          <h2 className="text-4xl sm:text-3xl md:text-5xl font-bold mb-4 text-black leading-tight">
             Frequently Asked <span className="text-[#ec7424]">Questions</span>
           </h2>
           <p className="text-base sm:text-lg text-black font-medium">
