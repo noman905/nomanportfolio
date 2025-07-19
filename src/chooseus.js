@@ -6,14 +6,14 @@ export default function WhyChooseUs() {
   return (
     <section
       id="chooseus"
-      className="py-16 px-4 sm:px-6 lg:px-12 bg-gradient-to-r from-white via-white to-[#febf11c0]"
+      className="py-16 px-4 sm:px-6 lg:px-12 bg-gradient-to-r from-[#fff8f1] via-[#fff8f1] to-[#ec742440]"
     >
       {/* Heading */}
       <div className="text-center mb-10">
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black leading-tight">
-          Why Choose <span className="text-[#febf11e0]">Us?</span>
+          Why Choose <span className="text-[#ec7424]">Us?</span>
         </h2>
-        <p className="text-black mt-5 text-lg sm:text-lg  mx-auto">
+        <p className="text-black mt-5 text-lg sm:text-lg mx-auto max-w-2xl">
           We solve the exact problems that hold your brand back online — here’s how.
         </p>
       </div>
@@ -23,22 +23,22 @@ export default function WhyChooseUs() {
         {/* Card 1 */}
         <motion.div
           whileHover={{ scale: 1.03 }}
-          className="bg-black text-white p-7 sm:p-9 rounded-2xl border border-[#1a1a1a]  transition"
+          className="bg-black text-white p-7 sm:p-9 rounded-2xl border border-[#1a1a1a] transition"
         >
           <h3 className="text-2xl sm:text-3xl font-semibold mb-6">
             ⚡ Fast & Reliable Websites
           </h3>
           <ul className="space-y-5 text-base sm:text-lg">
             <li className="flex items-start gap-3">
-              <span className="w-3 h-3 bg-[#febf11] rounded-full mt-1" />
+              <span className="w-3 h-3 bg-[#ec7424] rounded-full mt-1" />
               <p>
-                <strong className="text-[#ffbb00]">Problem:</strong> Slow websites lead to high bounce rates and lower trust.
+                <strong className="text-[#ec7424]">Problem:</strong> Slow websites lead to high bounce rates and lower trust.
               </p>
             </li>
             <li className="flex items-start gap-3">
-              <span className="w-3 h-3 bg-[#febf11] rounded-full mt-1" />
+              <span className="w-3 h-3 bg-[#ec7424] rounded-full mt-1" />
               <p>
-                <strong className="text-[#febf11]">Solution:</strong> We build blazing-fast websites using Next.js + Tailwind.
+                <strong className="text-[#ec7424]">Solution:</strong> We build blazing-fast websites using Next.js + Tailwind.
               </p>
             </li>
           </ul>
@@ -47,7 +47,7 @@ export default function WhyChooseUs() {
         {/* Card 2 */}
         <motion.div
           whileHover={{ scale: 1.03 }}
-          className="bg-[#febf11] text-black p-7 sm:p-9 rounded-2xl border border-[#e8c100] transition"
+          className="bg-[#ec7424] text-black p-7 sm:p-9 rounded-2xl border border-black transition"
         >
           <h3 className="text-2xl sm:text-3xl font-semibold mb-6">
             🛠️ Ongoing Support for 30 Days
@@ -71,22 +71,22 @@ export default function WhyChooseUs() {
         {/* Card 3 */}
         <motion.div
           whileHover={{ scale: 1.03 }}
-          className="bg-black text-white p-7 sm:p-9 rounded-2xl border border-[#1a1a1a]  transition"
+          className="bg-black text-white p-7 sm:p-9 rounded-2xl border border-[#1a1a1a] transition"
         >
           <h3 className="text-2xl sm:text-3xl font-semibold mb-6">
             📱 Mobile-Optimized Designs
           </h3>
           <ul className="space-y-5 text-base sm:text-lg">
             <li className="flex items-start gap-3">
-              <span className="w-3 h-3 bg-[#febf11] rounded-full mt-1" />
+              <span className="w-3 h-3 bg-[#ec7424] rounded-full mt-1" />
               <p>
-                <strong className="text-[#ffbb00]">Problem:</strong> Non-responsive sites lose mobile users.
+                <strong className="text-[#ec7424]">Problem:</strong> Non-responsive sites lose mobile users.
               </p>
             </li>
             <li className="flex items-start gap-3">
-              <span className="w-3 h-3 bg-[#febf11] rounded-full mt-1" />
+              <span className="w-3 h-3 bg-[#ec7424] rounded-full mt-1" />
               <p>
-                <strong className="text-[#ffbb00]">Solution:</strong> We build mobile-first layouts that look stunning on every screen.
+                <strong className="text-[#ec7424]">Solution:</strong> We build mobile-first layouts that look stunning on every screen.
               </p>
             </li>
           </ul>
@@ -97,7 +97,7 @@ export default function WhyChooseUs() {
       <div className="mt-20 text-center">
         <Link
           href="/bookcall"
-          className="inline-block bg-[#febf11c0] text-black font-semibold py-4 px-10 rounded-full text-lg hover:bg-yellow-400 transition"
+          className="inline-block bg-[#ec7424] text-white font-semibold py-4 px-10 rounded-full text-lg hover:opacity-90 transition"
         >
           BOOK 1:1 DISCOVERY CALL
         </Link>

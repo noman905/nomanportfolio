@@ -3,34 +3,26 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="w-full flex items-center justify-center text-center px-2 sm:px-4 pt-20 md:pt-20 pb-20  md:bg-gradient-to-r from-white md:via-white to-[#ffffffc0]">
-      <div className="w-full max-w-6xl flex flex-col items-center justify-center">
+    <section className="w-full min-h-screen flex items-center justify-center bg-[#fff8f1] text-[#1a1a1a] px-4 pt-24 pb-20">
+      <div className="max-w-6xl w-full flex flex-col items-center text-center">
 
         {/* Main Heading */}
-        <h1 className="text-[36px] sm:text-[40px] md:text-[52px] lg:text-[60px] font-extrabold text-black leading-tight md:leading-[1.2] max-w-4xl">
-          Transforming <span className="text-[#F6C745]">Coaching Brands </span>
-          with <span className="text-[#F6C745]"> Strategic</span> & <span className="text-[#F6C745]">Converting</span> Websites
+        <h1 className="text-[32px] sm:text-[40px] md:text-[52px] lg:text-[60px] font-extrabold leading-tight max-w-5xl">
+          Premium Websites to Elevate <span className="text-[#ec7424]">Coaches</span> & <span className="text-[#ec7424]">Consultants</span> into Leaders Category 
         </h1>
 
         {/* Subheading */}
-        <p className="text-base sm:text-lg md:text-xl font-medium text-black mt-6 max-w-2xl px-4">
-          We help coaches grow faster with websites that are not just beautiful — but built to convert.
+        <p className="text-base sm:text-lg md:text-xl font-medium text-[#000000] mt-6 max-w-2xl px-4">
+          I craft refined websites that attract premium clients and position your coaching brand as an authority.
         </p>
 
-        {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-10 w-full max-w-sm sm:max-w-none justify-center px-2">
-          <Link href="/bookcall">
-            <button className="w-[260px] sm:w-auto bg-[#F6C745] hover:bg-[#f5b900] transition duration-300 text-black font-semibold py-3 px-10 rounded-full shadow-md text-sm sm:text-base">
-              BOOK 1:1 DISCOVERY CALL
-            </button>
-          </Link>
+        {/* CTA Button */}
+        <Link href="#contact">
+          <button className="mt-10 bg-[#ec7424] text-white text-lg font-semibold px-8 py-3 rounded-full hover:bg-[#d26219] transition duration-300 shadow-lg">
+            Book Your discovery call
+          </button>
+        </Link>
 
-          <Link href="#work">
-            <button className="w-[250px] sm:w-auto bg-black hover:bg-gray-900 transition duration-300 text-white font-semibold py-3 px-10 rounded-full shadow-md text-sm sm:text-base">
-              SEE MY WORK
-            </button>
-          </Link>
-        </div>
       </div>
     </section>
   );

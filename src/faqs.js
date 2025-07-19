@@ -39,13 +39,12 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-12 bg-white">
+    <section className="py-16 px-4 sm:px-6 lg:px-12 bg-[#fdf8f3]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-
         {/* Left Heading */}
         <div className="text-center md:text-left">
           <h2 className="text-[28px] sm:text-3xl md:text-5xl font-bold mb-4 text-black leading-tight">
-            Frequently Asked <span className="text-yellow-400">Questions</span>
+            Frequently Asked <span className="text-[#ec7424]">Questions</span>
           </h2>
           <p className="text-base sm:text-lg text-black font-medium">
             Here everything you might want to know before we team up and build your next-level site.
@@ -57,7 +56,7 @@ export default function FAQSection() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border-2 border-yellow-400 rounded-2xl overflow-hidden shadow-lg bg-white transition-transform hover:scale-[1.01]"
+              className="border-2 border-[#ec7424] rounded-2xl overflow-hidden shadow-lg bg-white transition-transform hover:scale-[1.01]"
             >
               <button
                 className="w-full flex justify-between items-center p-5 sm:p-6 text-left text-base sm:text-lg font-semibold bg-white"
@@ -68,7 +67,7 @@ export default function FAQSection() {
                   initial={false}
                   animate={{ rotate: openIndex === index ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
-                  className="text-yellow-400 ml-4 text-xl sm:text-2xl"
+                  className="text-[#ec7424] ml-4 text-xl sm:text-2xl"
                 >
                   {openIndex === index ? "-" : "+"}
                 </motion.span>

@@ -1,75 +1,103 @@
-"use client";
+'use client';
 import Link from "next/link";
 import { FiCheckCircle, FiZap, FiTrendingUp } from "react-icons/fi";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const solutions = [
   {
     icon: <FiCheckCircle size={24} />,
-    title: "Build Instant Trust",
-    desc: "A clean, modern site that shows you're legit. When people Google you — they’ll find a brand that builds confidence.",
+    title: "Instant Credibility",
+    desc: "A clean, modern website that shows you’re legit — so premium clients trust you from first click.",
   },
   {
     icon: <FiZap size={24} />,
-    title: "Turn Visitors Into Leads",
-    desc: "I design websites that speak clearly, load fast, and guide your visitors toward action — no fluff, just results.",
+    title: "Built to Convert",
+    desc: "No fluff. Just strategic design that guides visitors to take action — faster.",
   },
   {
     icon: <FiTrendingUp size={24} />,
-    title: "Stay Ahead of the Curve",
-    desc: "With a high-converting site that looks better and performs faster than your competition — you’ll lead, not lag.",
+    title: "Stand Out, Stay Ahead",
+    desc: "Look sharper. Load faster. Convert better than the coaches you’re competing with.",
   },
 ];
 
 export default function SolutionSection() {
   return (
-    <section className="bg-white py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-      {/* Heading */}
-      <div className="text-center mb-20">
-        <h2 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] leading-tight font-extrabold text-black mb-4">
-          Real Results. Real Solutions.
-        </h2>
-        <p className="text-black text-base md:text-lg max-w-2xl mx-auto">
-          I design websites that solve real business problems and help you grow.
-        </p>
-      </div>
+    <section className="bg-[#fff8f1] py-24 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-      {/* Staggered Cards */}
-      <div className="space-y-20 ">
-        {solutions.map((item, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            className={`flex flex-col md:flex-row items-center md:gap-6 ${
-              index % 2 === 1 ? "md:flex-row-reverse" : ""
-            }`}
-          >
-            {/* Left: Icon + Title */}
-            <div className="flex-shrink-0 ">
-              <div className="bg-[#febf11c0] text-black p-4 rounded-full shadow-md w-14 h-14 flex items-center justify-center mb-4 md:mb-0" />
-              <h3 className="text-xl sm:text-2xl font-bold text-black max-w-xs">
-                {item.title}
-              </h3>
-            </div>
+        {/* Left Visual / Image */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="relative w-full h-auto flex flex-col gap-6"
+        >
+          <div className="w-full h-auto rounded-3xl overflow-hidden shadow-xl bg-white">
+            <Image
+              src="/solution.png"
+              alt="Coaching Growth"
+              width={800}
+              height={500}
+              className="w-full h-auto"
+            />
+          </div>
 
-            {/* Right: Description Block */}
-            <div className="bg-[#f9f9f9] shadow-[#febf11c0] p-6 sm:p-8 rounded-2xl shadow-md max-w-2xl w-full">
-              <div className="text-black text-[17px]">{item.desc}</div>
-            </div>
-          </motion.div>
-        ))}
-      </div>
+          {/* New Button Below Image */}
+          <div className="flex justify-center mt-4">
+            <Link href="/project ">
+              <button className="bg-[#ec7424] hover:bg-[#d6631b] text-white font-semibold py-3 px-6 rounded-full text-base transition-all duration-300 shadow-md">
+                Check Full Website
+              </button>
+            </Link>
+          </div>
+        </motion.div>
 
-      {/* CTA */}
-      <div className="mt-20 text-center">
-        <Link href="/bookcall">
-          <button className="bg-[#febf11c0] hover:bg-[#F6C745] text-black font-semibold py-3 px-8 rounded-full text-lg transition">
-            Book Your Discovery Call
-          </button>
-        </Link>
+        {/* Right Content */}
+        <div className="space-y-8">
+          {/* Heading */}
+          <div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-black">
+              <span className="text-[#ec7424]">Real Solutions</span> for Serious Growth
+            </h2>
+            <p className="text-lg md:text-xl text-black font-medium mt-4">
+              These sites don’t just look good — they work hard to build trust and book calls.
+            </p>
+          </div>
+
+          {/* Solution Cards */}
+          <div className="space-y-6">
+            {solutions.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="flex items-start gap-4"
+              >
+                <div className="flex-shrink-0 text-[#ec7424] mt-1">
+                  {item.icon}
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-black">{item.title}</h3>
+                  <p className="text-base text-black leading-relaxed">{item.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="pt-6">
+            <Link href="/bookcall">
+              <button className="bg-[#ec7424] hover:bg-[#d6631b] text-white  font-semibold py-3 px-8 rounded-full text-lg transition-all duration-300 shadow-md">
+                Book Your Discovery Call
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );

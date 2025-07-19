@@ -1,80 +1,103 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'SLEEP COACHING PLATFORM',
-    highlight: 'SLEEP COACH',
-    description:
-      '✅ Hero section with calming animation & conversion-focused CTA\n✅ Integrated sleep assessment quiz for lead generation\n✅ Premium testimonial slider for authority building\n✅ Soft gradient color branding to match niche',
     image: '/project/project1.png',
-    alt: 'Sleep Coach Website',
-    url: 'https://client1noman.netlify.app/',
+    alt: 'Coaching Website',
+    title: 'Luxury Website for a Sleep Coach',
+    features: [
+      'Emotive copy that connects',
+      'Elegant, calming design',
+      'Bold structure & flow',
+      'Trust-building typography',
+      'Responsive across devices',
+    ],
+    link: 'https://client1noman.netlify.app',
   },
   {
-    title: 'REFERRAL COACHING FOR SMEs',
-    highlight: 'REFERRAL COACH',
-    description:
-      '✅ High-converting lead magnet section (PDF download)\n✅ Clear client journey flow with result-oriented messaging\n✅ Animated logos & counters to show credibility\n✅ Custom-built FAQ accordion with smooth UX',
     image: '/project/project2.png',
-    alt: 'Referral Coach Website',
-    url: 'https://client2noman.netlify.app/',
+    alt: 'Luxury Landing Page',
+    title: 'Authority Website for SME Coach',
+    features: [
+      'Story-driven messaging',
+      'Clean expert visuals',
+      'Sharp layout balance',
+      'Refined spacing strategy',
+      'Mobile-first execution',
+    ],
+    link: 'https://client2noman.netlify.app',
   },
   {
-    title: 'CONFIDENCE COACHING COLLECTIVE',
-    highlight: 'CONFIDENCE COACH',
-    description:
-      '✅ Stat-based results section with animated counters\n✅ Clean design focused on storytelling & authority\n✅ Embedded video & testimonials for proof\n✅ Custom CTA sections built to convert funders',
     image: '/project/project3.png',
-    alt: 'Confidence Coach Website',
-    url: 'https://client3noman.netlify.app',
+    alt: 'SaaS Website',
+    title: 'Clarity & Confidence Coach Brand Site',
+    features: [
+      'Direct conversion copy',
+      'Polished modern UI',
+      'Lux-grade typography',
+      'Smooth section flow',
+      'Fully responsive',
+    ],
+    link: 'https://client3noman.netlify.app',
   },
 ];
 
-export default function ProjectsSection() {
+export default function ShowcaseWork() {
   return (
-    <section id="projects" className="py-16 px-4 md:px-10 bg-[#FFFFFF]">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black pb-2">
-          <span className="text-5xl">🧠</span> COACHING SITES THAT BUILD{' '}
-          <span className="text-[#febf11c0]">AUTHORITY</span>
+    <section className="bg-[#fdf8f3] py-24 px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl md:text-5xl font-extrabold text-[#ec7424] mb-4">
+          Elevating Coaches into Iconic Brands
         </h2>
-        <p className="text-black max-w-2xl mx-auto text-base md:text-lg mb-12">
-          Here’s how I help coaches turn their expertise into results-focused websites with premium design and smart features.
+        <p className="text-lg text-black mb-12 md:px-20">
+          Explore a curated selection of websites crafted with <span className="font-semibold text-[#ec7424]">strategic messaging</span> and
+          <span className="font-semibold text-[#ec7424]"> elegant design</span> — built to convert, impress, and position you as the authority.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
-              className="border-2 border-yellow-400 bg-gradient-to-b from-[#fcfcfc] via-white to-[#efc4181f] rounded-lg p-3 sm:p-4 flex flex-col items-center hover:shadow-lg transition duration-300"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="overflow-hidden rounded-3xl border border-[#ec7424]/20 group bg-gradient-to-b from-[#fffdf9] to-[#fef8f1] p-5 flex flex-col justify-between shadow-[0_15px_35px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)] transition-all duration-500 hover:-translate-y-1 hover:border-[#ec7424]/40"
             >
-              <Image
-                src={project.image}
-                alt={project.alt}
-                width={300}
-                height={180}
-                className="rounded-2xl sm:rounded-2xl border border-black"
-              />
-              <h3 className="mt-3 text-base sm:text-lg font-bold text-black text-center">
-                <span className="text-yellow-500">{project.highlight}</span>{' '}
-                {project.title.replace(project.highlight, '').trim()}
-              </h3>
-              <ul className="text-black text-sm mt-2 text-left list-disc list-inside whitespace-pre-line">
-                {project.description.split('\n').map((line, i) => (
-                  <li key={i}>{line.replace('✅ ', '')}</li>
-                ))}
-              </ul>
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-4 rounded-full text-sm sm:text-base"
-              >
-                Check live website
-              </a>
-            </div>
+              <div className="relative mb-4 rounded-xl overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={project.alt}
+                  width={200}
+                  height={200}
+                  className="group-hover:scale-105 h-full w-full transition-transform duration-500 rounded-xl"
+                />
+              </div>
+
+              <div className="text-left">
+                <h3 className="text-xl font-bold text-[#ec7424] mb-2">{project.title}</h3>
+                <ul className="text-sm text-[#000] list-none space-y-1 mb-4">
+                  {project.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-start">
+                      <span className="mr-2 text-[#ec7424]">•</span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <Link
+                  href={project.link}
+                  target="_blank" rel="noopener noreferrer"
+                  className="mt-auto  inline-block bg-[#ec7424] hover:bg-[#d4621c] text-white text-sm font-semibold py-2 px-4 rounded-xl transition"
+                >
+                  View Full Project →
+                </Link>
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>
