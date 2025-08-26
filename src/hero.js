@@ -7,7 +7,7 @@ import { Edit2, Palette, Repeat } from 'lucide-react'; // Lucide icons
 export default function Hero() {
   const [hovered, setHovered] = useState(false);
   return (
-    <section className="relative w-full flex items-center justify-center bg-[#fff8f1] text-[#1a1a1a] px-4 pt-30 md:pt-16 pb-10 overflow-hidden">
+    <section className="relative w-full flex items-center justify-center bg-[#fff8f1] text-[#1a1a1a] px-4  md:pt-16 pb-10 overflow-hidden">
 
       {/* Decorative Background */}
       <div className="absolute -top-20 -left-20 w-[300px] h-[300px] bg-[#ffeedd] rounded-full opacity-30 blur-3xl pointer-events-none"></div>
