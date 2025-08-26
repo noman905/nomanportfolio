@@ -4,32 +4,35 @@ import { motion } from 'framer-motion';
 
 const processSteps = [
   {
-    title: "Discovery Call",
-    description: "We begin with a call to understand your vision, goals, and what makes your brand unique.",
+    title: "Discovery & Audit",
+    description: "We analyze your current landing page and speak with you to understand your goals, target audience, and key conversion bottlenecks.",
   },
   {
-    title: "Creative Direction",
-    description: "We align on the aesthetic and strategy that fits your brand — modern, clean, and conversion-focused.",
+    title: "Strategic Messaging",
+    description: "We craft copy that instantly communicates your SaaS value, captures attention, and guides visitors toward action.",
   },
   {
-    title: "High-End Design",
-    description: "We craft a luxury look and feel with premium visuals and user-focused layouts.",
+    title: "Conversion-Driven Design",
+    description: "Our design focuses on clarity and trust — layouts, visuals, and CTAs are optimized to turn visitors into paying customers.",
   },
   {
-    title: "Launch & Support",
-    description: "We launch your website with performance optimization and continue to support post-launch if needed.",
+    title: "Launch & Continuous Optimization",
+    description: "We launch your high-converting landing page and monitor performance, making tweaks to maximize leads and ROI.",
   },
 ];
+
 
 export default function ProcessSection() {
   return (
     <section className="bg-[#fff8f1] py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#ec7424] mb-4">Our Signature Process</h2>
-          <p className="text-lg text-black max-w-2xl mx-auto">
-            A simple, powerful journey from vision to launch.
-          </p>
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#ec7424] mb-4">
+  Our Proven Process to Turn Visitors into Paying Customers
+</h2>
+<p className="text-lg text-black max-w-2xl mx-auto">
+  From understanding your audience to crafting persuasive copy and high-converting design, we guide every step to maximize leads and revenue.
+</p>
         </div>
 
         {/* Timeline Wrapper */}

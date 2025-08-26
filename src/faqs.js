@@ -2,32 +2,36 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-
 const faqs = [
   {
-    question: "How long does it take to build my site?",
+    question: "Who will benefit most from this landing page service?",
     answer:
-      "Typically, 2-4 weeks depending on the complexity. We prioritize quality and speed without compromising either.",
+      "B2B SaaS companies aiming to convert visitors into qualified leads and paying customers quickly.",
   },
   {
-    question: "Will my site be mobile-friendly and fast?",
+    question: "How quickly can updates or changes be implemented?",
     answer:
-      "Absolutely! Every site I build is SEO-optimized, mobile-responsive, and designed to load fast to boost conversions.",
+      "Small updates are usually completed within 24–48 hours, while larger redesigns are planned with clear timelines.",
   },
   {
-    question: "What if I need changes after the project?",
+    question: "Do you help with messaging and copywriting?",
     answer:
-      "You get 30 days of free support after launch — for small tweaks, revisions, or any questions you have.",
+      "Yes, we craft persuasive, action-driven copy that clearly communicates your SaaS value and drives conversions.",
   },
   {
-    question: "Can you help me with the branding and messaging too?",
+    question: "Can we track progress and provide feedback during the project?",
     answer:
-      "Yes! I help plan the structure and write clear, action-focused messaging so your site connects and converts.",
+      "Absolutely! We keep communication transparent through regular updates and scheduled reviews to ensure alignment.",
   },
   {
-    question: "Do you offer ongoing support or website care plans?",
+    question: "Will the landing page be optimized for conversions?",
     answer:
-      "Yes, I offer optional monthly support plans to keep your site updated, secured, and growing.",
+      "Every element — from layout to buttons and headlines — is strategically designed to maximize sign-ups and demo requests.",
+  },
+  {
+    question: "Can your services be customized to fit our goals?",
+    answer:
+      "Yes, we offer tailored solutions depending on whether you need a single high-converting page or a full SaaS website overhaul.",
   },
 ];
 

@@ -16,8 +16,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`flex justify-between sticky top-0 z-10 items-center px-2 md:px-6 py-4 bg-[#fff8f1] transition-shadow duration-300 ${
-        isScrolled ? 'shadow-md' : 'shadow-none'
+      className={`fixed top-0 left-1/2 transform -translate-x-1/2 z-20 flex justify-between items-center px-4 md:px-6 py-4 bg-[#fff8f1] transition-all duration-500 ${
+        isScrolled
+          ? ' w-5/5 md:w-4/5 rounded-xl shadow-lg'
+          : 'w-full rounded-none shadow-none'
       }`}
     >
       {/* Brand Name */}

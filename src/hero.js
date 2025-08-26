@@ -18,7 +18,7 @@ export default function Hero() {
        
 
        {/* Main Heading */}
-<h1 className="text-[31px] sm:text-[40px] md:text-[52px] lg:text-[60px] font-extrabold  pt-13 md:pt-4 leading-tight max-w-5xl">
+<h1 className="text-[31px] sm:text-[40px] md:text-[52px] lg:text-[60px] font-extrabold  pt-30 md:pt-20 leading-tight max-w-5xl">
   Turn Your <span className='text-[#ec7424]'>B2B SaaS  Landing</span> Page Into a <span className='text-[#ec7424]'>Conversion Machine</span> — Not Just a Pretty
 </h1>
 
